@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>msh.studio | Contact Us</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
   <div id="preloader"></div>
@@ -34,7 +35,7 @@
   <div class="contact-page">
     <div class="container">
       <div class="contact-columns">
-        <div>
+        <div class="contact-top">
           <div class="contact-row">
             <div class="contact-form bottom">
               <div>
@@ -53,38 +54,44 @@
           </div>
           <div class="contact-row">
             <h6 class="bottom11">I’m interested in...</h6>
-            <div class="contact-inner-row bottom19">
-              <button type="button" class="btn contact-btn1">Web Development</button>
-              <button type="button" class="btn contact-btn1">App  Design</button>
-              <button type="button" class="btn contact-btn1">UX/UI Design</button>
-              <button type="button" class="btn contact-btn1">Branding</button>
-            </div>
-            <div class="contact-inner-row row2 bottom2">
-              <button type="button" class="btn contact-btn1">S.E.O</button>
-              <button type="button" class="btn contact-btn1">Web Design</button>
-              <button type="button" class="btn contact-btn1">Animation</button>
+            <div class="contact-outer-row">
+              <div class="contact-inner-row bottom19">
+                <button type="button" class="btn contact-btn1">Web Development</button>
+                <button type="button" class="btn contact-btn1">App  Design</button>
+                <button type="button" class="btn contact-btn1">UX/UI Design</button>
+                <button type="button" class="btn contact-btn1">Branding</button>
+              </div>
+              <div class="contact-inner-row row2 bottom2">
+                <button type="button" class="btn contact-btn1">S.E.O</button>
+                <button type="button" class="btn contact-btn1">Web Design</button>
+                <button type="button" class="btn contact-btn1">Animation</button>
+              </div>
             </div>
           </div>
           <div class="contact-row">
             <h6 class="bottom21">Project budget (USD)</h6>
             <div class="contact-inner-row bottom29">
-              <div>
-                <input type="text" id="budget" class="budget" name="budget" placeholder="Enter Your Price">
+              <div class="contact-outer-row2">
+                <div>
+                  <input type="text" id="budget" class="budget" name="budget" placeholder="Enter Your Price">
+                </div>
+                <button type="button" class="btn contact-btn1">$1K-$5K</button>
               </div>
-              <button type="button" class="btn contact-btn1">$1K-$5K</button>
-              <button type="button" class="btn contact-btn1">$5K-$10K</button>
-              <button type="button" class="btn contact-btn1">>$20K</button>
+              <div class="contact-outer-row2">
+                <button type="button" class="btn contact-btn1">$5K-$10K</button>
+                <button type="button" class="btn contact-btn1">>$20K</button>
+              </div>
             </div>
           </div>
           <div class="contact-row">
-            <h6 class="bottom3">Tell us more about your project</h6>
-            <div class="bottom31">
+            <h6 class="bottom3 none">Tell us more about your project</h6>
+            <div class="bottom31 none">
               <input type="text" id="idea" class="idea" name="idea" placeholder="Something about your great idea">
             </div>
             <div class="btn contact-btn2 bottom39">Submit The request</div>
           </div>
         </div>
-        <div class="right">
+        <div class="right contact-bottom">
           <div class="contact-gif top">
             <img src="gifs/dance.gif" alt="Dance">
           </div>

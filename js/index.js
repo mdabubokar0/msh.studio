@@ -20,19 +20,6 @@ closeBtn.addEventListener("click", () => {
     menu.classList.remove('active');
 });
 
-//nav
-
-let menu = document.querySelector("#menu-icon");
-let navbar = document.querySelector(".navbar");
-
-menu.addEventListener("click", function () {
-    navbar.classList.toggle("active");
-})
-
-window.onscroll = () => {
-    navbar.classList.remove("active");
-}
-
 //animation
 
 const sr = ScrollReveal({
