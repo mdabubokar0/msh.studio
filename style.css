@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'jakarta4';
+  text-decoration: none;
 }
 
 @font-face {
@@ -107,6 +108,7 @@ header .menu a{
   font-size: 25px;
   cursor: pointer;
   display: none;
+  color: #000;
 }
 
 .line{
@@ -281,6 +283,13 @@ header .menu a{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  transition: all .4s ease;
+}
+
+.service-name h6:hover{
+  background: #000;
+  color: #fafafa;
+  margin-top: -10px;
 }
 
 .horizontal-line{
@@ -308,9 +317,15 @@ header .menu a{
   font-size: 16px;
 }
 
-.service-info img{
+.service-arrow{
   width: 115px;
   height: 115px;
+  transition: all .4s ease;
+  cursor: pointer;
+}
+
+.service-arrow:hover{
+  rotate: 30deg;
 }
 
 /*Work Section*/
@@ -381,10 +396,24 @@ header .menu a{
   align-items: center;
   font-family: 'jakarta7';
   font-size: 10px;
+  transition: all .4s ease;
 }
 
 .row2{
   margin-top: 27px;
+}
+
+.work-tags{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.work-showcase h6:hover{
+  margin-top: -1px;
+  background: #000;
+  color: #fafafa;
 }
 
 /*Expert Section*/
@@ -623,6 +652,7 @@ header .menu a{
 
 .feedback-btn{
   margin: 46px auto 0px auto;
+  color: #000;
 }
 
 /*Footer Section*/
@@ -833,7 +863,7 @@ header .menu a{
 .showcase{
   margin-top: 52px;
   padding-top: 1px;
-  height: 2010px;
+  height: 1525px;
   background: #fff;
   border-radius: 32px;
   padding-left: 51px;
@@ -899,6 +929,7 @@ header .menu a{
   height: 62.05px;
   border: 0.5px solid #c2c2c2;
   background: #fafafa;
+  transition: all .4s ease;
   &:focus{
     border-color: #000;
   }
@@ -908,7 +939,7 @@ header .menu a{
   background: #000;
   color: #fff;
   border: 0;
-  transition: all .4s ease;
+  margin-top: -20px;
 }
 
 .contact-btn2{
@@ -919,13 +950,14 @@ header .menu a{
   font-family: 'jakarta4';
   font-size: 14px;
   margin-top: 61px;
+  transition: all .4s ease;
 }
 
 .contact-btn2:hover{
   background: #fafafa;
   color: #000;
   border: 0.5px solid #c2c2c2;
-  transition: all .4s ease;
+  margin-left: 20px;
 }
 
 .contact-gif img{
