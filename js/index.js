@@ -52,12 +52,14 @@ function toggleBorder(button) {
       button.style.border = "";
       savedText = null;
       text.pop(savedText);
+      inButton.classList.remove("interest");
     } else {
       button.style.border = "1px solid black";
       savedText = button.innerHTML;
       console.log(`Saved text: ${savedText}`);
       text.push(savedText);
       console.log(text);
+      inButton.classList.add("interest");
     }
 }
 
@@ -68,12 +70,13 @@ function toggleBorder2(button) {
       button.style.border = "";
       savedText2 = null;
       text2.pop(savedText2);
+      buButton.classList.remove("budget");
     } else {
       button.style.border = "1px solid black";
       savedText2 = button.innerHTML;
       console.log(`Saved text: ${savedText2}`);
       text2.push(savedText2);
-      console.log(text2);
+      buButton.classList.add("budget");
     }
 }
 
@@ -84,6 +87,8 @@ function sendEmail(){
         email : document.getElementById("cta-email").value,
         message : document.getElementById("cta-idea").value,
     };
+
+    console.log(params);
 
     const serviceId = "service_6y7hwgi";
     const templateId = "template_foeoiac";

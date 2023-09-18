@@ -847,6 +847,8 @@ header .menu a{
   margin-right: auto;
   width: 654px;
   height: 703.82px;
+  transition: all 6s ease;
+  animation: rotation 10s infinite linear;
 }
 
 /*Work Page*/
