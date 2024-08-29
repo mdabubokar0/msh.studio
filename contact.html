@@ -5,179 +5,112 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>msh.studio | Contact Us</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-    <script type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-</script>
-<script type="text/javascript">
-   (function(){
-      emailjs.init("s9bQwJgafMwAw09IS");
-   })();
-</script>
 </head>
 <body>
   <div id="preloader"></div>
   <!--Navbar-->
   <nav>
     <header>
-      <a href="#"><img class="brand" src="images/logo.png" alt="Logo"></a>
-        <div class="menu">
-          <div class="head-btn">
-            <i class="fas fa-times close-btn"></i>
-          </div>
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="work.html">Work</a>
-          <a href="contact.html">Contact</a>
-          <a href="https://dribbble.com/uishyed"><img class="icon" src="images/dribbble.png" alt="D"></a>
-          <a href="https://www.behance.net/shyed"><img class="icon" src="images/be.png" alt="B"></a>
-          <a href="#"><div class="line"></div></a>
-          <a href="contact.html"><div class="btn"><div class="btn-green"></div>Let's talk!</div></a>
-        </div>
+      <a href="index.html"><img class="brand" src="images/logo.png" alt="Logo"></a>
+      <div class="menu">
         <div class="head-btn">
-          <i class="fas fa-bars menu-btn"></i>
+          <i class="fas fa-times close-btn"></i>
         </div>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="work.html">Work</a>
+        <a href="contact.html">Contact</a>
+        <a href="https://dribbble.com/uishyed"><img class="icon" src="images/dribbble.png" alt="dribbble"></a>
+        <a href="https://www.behance.net/shyed"><img class="icon" src="images/be.png" alt="behance"></a>
+        <a href="#">
+          <div class="line"></div>
+        </a>
+        <a href="contact.html">
+          <div class="btn">
+            <div class="btn-green"></div>Let's talk!
+          </div>
+        </a>
+      </div>
+      <div class="head-btn">
+        <i class="fas fa-bars menu-btn"></i>
+      </div>
     </header>
   </nav>
   <!--Contact Page-->
-  <div class="contact-page">
-    <div class="container">
-      <div class="contact-columns">
-        <div class="contact-top">
-          <div class="contact-row">
-            <div class="contact-form bottom">
-              <div>
-                <p class="contact-text1">Name & Company</p>
-                <div>
-                  <input type="text" class="text" id="cta-name" placeholder="Enter Your Name">
-                </div>
-              </div>
-              <div>
-                <p class="contact-text1">Your Email</p>
-                <div>
-                  <input type="email" class="email2" id="cta-email" placeholder="Enter Your Email">
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="contact-row">
-            <h6 class="bottom11">I’m interested in...</h6>
-            <div class="contact-outer-row">
-              <div class="contact-inner-row bottom19">
-                <button type="button" class="btn contact-btn1 inBtn" id="btn" onclick="toggleBorder(this),saveText(this)">Web Development</button>
-                <button type="button" class="btn contact-btn1 inBtn" id="btn" onclick="toggleBorder(this),saveText(this)">App  Design</button>
-                <button type="button" class="btn contact-btn1 inBtn" id="btn" onclick="toggleBorder(this),saveText(this)">UX/UI Design</button>
-                <button type="button" class="btn contact-btn1 inBtn" id="btn" onclick="toggleBorder(this),saveText(this)">Branding</button>
-              </div>
-              <div class="contact-inner-row row2 bottom2">
-                <button type="button" class="btn contact-btn1 inBtn" id="btn" onclick="toggleBorder(this)">S.E.O</button>
-                <button type="button" class="btn contact-btn1 inBtn" id="btn" onclick="toggleBorder(this)">Web Design</button>
-                <button type="button" class="btn contact-btn1 inBtn" id="btn" onclick="toggleBorder(this)">Animation</button>
-              </div>
-            </div>
-          </div>
-          <div class="contact-row">
-            <h6 class="bottom21">Project budget (USD)</h6>
-            <div class="contact-inner-row bottom29">
-              <div class="contact-outer-row2">
-                <div>
-                  <input type="text" id="cta-price" class="budget" name="user-price" placeholder="Enter Your Price">
-                </div>
-                <button type="button" class="btn contact-btn1 buBtn" id="btn" onclick="toggleBorder2(this)">$1K-$5K</button>
-              </div>
-              <div class="contact-outer-row2">
-                <button type="button" class="btn contact-btn1 buBtn" id="btn" onclick="toggleBorder2(this)">$5K-$10K</button>
-                <button type="button" class="btn contact-btn1 buBtn" id="btn" onclick="toggleBorder2(this)">>$20K</button>
-              </div>
-            </div>
-          </div>
-          <div class="contact-row">
-            <h6 class="bottom3 none">Tell us more about your project</h6>
-            <div class="bottom31 none">
-              <textarea id="cta-idea" cols="30" rows="10" placeholder="Something about your great idea"></textarea>
-            </div>
-            <p class="contact_message" id="contact-message"></p>
-            <button type="submit" class="btn contact-btn2 bottom39" onclick="sendEmail()">Submit The request</button>
-          </div>
+  <section class="container contact-page">
+    <form>
+      <div class="user-details">
+        <div class="user">
+          <label>Your Name</label>
+          <input type="text" id="name" placeholder="Enter Your Name">
         </div>
-        <div class="right contact-bottom">
-          <div class="contact-gif top">
-            <img src="gifs/dance.gif" alt="Dance">
-          </div>
-          <p class="contact-text">Have great idea? <br> Tell us about it.</p>
-          <div class="bottom">
-            <h1 class="contact-heading">Contact Us</h1>
-            <div class="contact-mail">
-              <img src="images/mail2.png" alt="Mail">
-              <p>msh.studio@outlook.com</p>
-            </div>
-          </div>
+        <div class="user">
+          <label>Your Email</label>
+          <input type="email" id="email" placeholder="Enter Your Email">
         </div>
       </div>
-    </div>
-  </div>
-  <!--Footer Section-->
-  <section class="footer-section">
-    <div class="container bottom">
-      <div class="footer-top">
-        <div class="footer-left footer-div">
-          <div class="footer-logo">
-            <img src="images/logo2.png" alt="Logo">
-          </div>
-          <p class="footer-text1 f-left-text">We are glad to see you on our <br> website! We are sure, that you will <br> find everything you need for your project.</p>
-          <div class="footer-mail">
-            <div class="mail-image">
-              <img src="images/mail.png" alt="Mail">
-            </div>
-            <p class="footer-text2">msh.studio@outlook.com</p>
-          </div>
-        </div>
-        <div class="footer-div">
-          <div class="footer-row1">
-            <div class="footer-column">
-              <p class="footer-text2">About</p>
-              <p class="footer-text1 f-right-text">About Us</p>
-              <p class="footer-text1 f-right-text">Team</p>
-            </div>
-            <div class="footer-column">
-              <p class="footer-text2">Services</p>
-              <p class="footer-text1 f-right-text">Design </p>
-              <p class="footer-text1 f-right-text">Technology</p>
-              <p class="footer-text1 f-right-text">Business</p>
-            </div>
-            <div class="footer-column">
-              <p class="footer-text2">Quick Links</p>
-              <p class="footer-text1 f-right-text">Work</p>
-              <p class="footer-text1 f-right-text">Contact Us</p>
-            </div>
-          </div>
-          <div class="footer-row2">
-            <div class="footer-icons">
-              <a href="https://dribbble.com/uishyed"><img src="images/f1.png" alt="Icon"></a>
-              <a href="https://app.slack.com/huddle/T0574606V33/C0574608FL1"><img src="images/f2.png" alt="Icon"></a>
-              <a href="https://www.behance.net/shyed"><img src="images/f3.png" alt="Icon"></a>
-              <a href="https://www.facebook.com/profile.php?id=100092141329064&mibextid=ZbWKwL"><img src="images/f4.png" alt="Icon"></a>
-              <a href="https://wa.me/message/XKIOSQOUUUPIN1"><img src="images/f5.png" alt="Icon"></a>
-            </div>
-          </div>
-        </div>
-        <div class="footer-div">
-          <div class="footer-text2 f-right-text2">Subscribe to be in touch</div>
-          <div class="footer-text1 f-right-text">Only valuable resource (no bullshit)</div>
-          <div class="footer-form">
-            <input type="email" name="email" placeholder="Your Email">
-            <button>Subscribe</button>
-          </div>
+      <div>
+        <h6>I’m interested in...</h6>
+        <div class="radio-group">
+          <input type="radio" id="interest1" name="interest" class="radio-input" />
+          <label for="interest1" class="radio-label">Web Development</label>
+          <input type="radio" id="interest2" name="interest" class="radio-input" />
+          <label for="interest2" class="radio-label">App Design</label>
+          <input type="radio" id="interest3" name="interest" class="radio-input" />
+          <label for="interest3" class="radio-label">UX/UI Design</label>
+          <input type="radio" id="interest4" name="interest" class="radio-input" />
+          <label for="interest4" class="radio-label">Branding</label>
+          <input type="radio" id="interest5" name="interest" class="radio-input" />
+          <label for="interest5" class="radio-label">S.E.O</label>
+          <input type="radio" id="interest6" name="interest" class="radio-input" />
+          <label for="interest6" class="radio-label">Web Design</label>
+          <input type="radio" id="interest7" name="interest" class="radio-input" />
+          <label for="interest7" class="radio-label">Animation</label>
         </div>
       </div>
-      <div class="horizontal-line grey"></div>
-      <div class="footer-bottom">
-        <p class="copyright">© All rights reserved by msh.studio</p>
+      <div class="radios">
+        <h6>Project budget (USD)</h6>
+        <div class="radio-group">
+          <input type="radio" id="budget1" name="budget" class="radio-input" />
+          <label for="budget1" class="radio-label">$500-$1K</label>
+          <input type="radio" id="budget2" name="budget" class="radio-input" />
+          <label for="budget2" class="radio-label">$1K-$5K</label>
+          <input type="radio" id="budget3" name="budget" class="radio-input" />
+          <label for="budget3" class="radio-label">$5K-$10K</label>
+          <input type="radio" id="budget4" name="budget" class="radio-input" />
+          <label for="budget4" class="radio-label">$20K-$50K</label>
+        </div>
       </div>
+      <div class="contact-row">
+        <h6>Tell us more about your project</h6>
+        <textarea placeholder="Something about your great idea"></textarea>
+        <button type="submit" onclick="sub()">Submit The request</button>
+      </div>
+    </form>
+    <div>
+      <img src="images/dance.gif" alt="dance">
+      <p class="contact-text">Have a great idea? <br> Tell us about it.</p>
     </div>
   </section>
+  <!--Footer Section-->
+  <footer>
+    <div class="container footer">
+      <div>
+        <img src="images/logo2.png" alt="Logo">
+        <p>We are glad to see you on our website! We are sure that you will find everything you need for your project.</p>
+      </div>
+      <div class="footer-icons">
+        <a href="https://dribbble.com/uishyed"><img src="images/f1.png" alt="Icon"></a>
+        <a href="https://app.slack.com/huddle/T0574606V33/C0574608FL1"><img src="images/f2.png" alt="Icon"></a>
+        <a href="https://www.behance.net/shyed"><img src="images/f3.png" alt="Icon"></a>
+        <a href="https://www.facebook.com/profile.php?id=100092141329064&mibextid=ZbWKwL"><img src="images/f4.png" alt="Icon"></a>
+        <a href="https://wa.me/message/XKIOSQOUUUPIN1"><img src="images/f5.png" alt="Icon"></a>
+      </div>
+      <div class="horizontal-line grey"></div>
+      <p class="copyright">© All rights reserved by msh.studio</p>
+    </div>
+  </footer>
 
-  <script src="js/scrollreveal.min.js"></script>
-  <script src="js/index.js"></script>
+  <script src="index.js"></script>
 </body>
 </html>
