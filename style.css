@@ -90,7 +90,7 @@ header .menu a {
 }
 
 .line {
-  background: #000;
+  background: #c2c2c2;
   width: 1px;
   height: 27px;
 }
@@ -186,11 +186,12 @@ header .menu a {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 33px;
+  gap: 30px;
 }
 
 .service-name {
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
   justify-content: center;
   margin-top: 20px;
   gap: 8px;
@@ -226,7 +227,7 @@ header .menu a {
 }
 
 .services {
-  margin-top: 33px;
+  margin-top: 40px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -349,13 +350,6 @@ header .menu a {
   margin-bottom: 40px;
 }
 
-.work-card h1 {
-  margin-top: 10px;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  font-weight: 700;
-  font-size: 24px;
-}
-
 .work-card {
   border: 0.5px solid #F2F2F2;
   border-radius: 32px;
@@ -371,6 +365,13 @@ header .menu a {
   border-radius: 32px;
   cursor: pointer;
   transition: all .4s ease;
+}
+
+.work-card h1 {
+  margin-top: 10px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
 }
 
 .work-tags {
@@ -523,7 +524,7 @@ footer {
 
 .about-page img {
   margin-top: 105px;
-  width: 1242px;
+  width: 1200px;
   height: 463px;
 }
 
@@ -654,7 +655,7 @@ form {
   font-weight: 500;
 }
 
-.radio-input:checked + .radio-label {
+.radio-input:checked+.radio-label {
   border-color: #000000;
 }
 
@@ -683,13 +684,13 @@ form {
   border: 0.5px solid #c2c2c2;
 }
 
-.contact-page img {
+.gif img {
   width: 180px;
   height: 180px;
   border-radius: 50%;
 }
 
-.contact-page p {
+.gif p {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 400;
   font-size: 45px;
@@ -717,13 +718,136 @@ form {
   }
 }
 
-@media (max-width: 1060px) {
-  .container {
-    max-width: 1060px;
+@media (max-width: 1024px) {
+
+  .container,
+  .grey {
+    max-width: 750px;
   }
 
   header {
-    max-width: 1060px;
+    max-width: 780px;
+  }
+
+  /*Hero Section*/
+
+  .home {
+    margin-top: 40px;
+  }
+
+  .home h1 {
+    font-size: 90px;
+  }
+
+  .company-names h1 {
+    font-size: 26px;
+  }
+
+  /*Service Section*/
+
+  .service h1 {
+    font-size: 80px;
+  }
+
+  .services h1 {
+    font-size: 60px;
+  }
+
+  .service-name h6 {
+    width: 120px;
+  }
+
+  /*Expert Section*/
+
+  .expert p {
+    font-size: 38px;
+  }
+
+  .expert-list {
+    gap: 10px;
+  }
+
+  .expert-list h1 {
+    width: 275px;
+    height: 100px;
+  }
+
+  /*Work Section*/
+
+  .work-card img {
+    width: 260px;
+    height: 170px;
+  }
+
+  .work-card h1 {
+    font-size: 14px;
+  }
+
+  .work-tags h6 {
+    width: 100px;
+  }
+
+  /*Feedback Section*/
+
+  .feedback-heading {
+    font-size: 80px;
+  }
+
+  /*About Page*/
+
+  .about-page {
+    margin-top: 100px;
+  }
+
+  .about-page h1 {
+    font-size: 120px;
+  }
+
+  .about-page p {
+    margin-top: 40px;
+  }
+
+  .about-page img {
+    margin-top: 80px;
+    width: 750px;
+    height: 300px;
+  }
+
+  .about-page h2 {
+    margin-top: 60px;
+    font-size: 60px;
+  }
+
+  .about-page h3 {
+    margin-top: 80px;
+    font-size: 38px;
+  }
+
+  .the-team img {
+    width: 450px;
+    height: 500px;
+  }
+
+  .talk {
+    padding: 80px 0;
+  }
+
+  /*Contact Page*/
+
+  .gif {
+    display: none;
+  }
+}
+
+@media screen and (max-width : 768px) {
+
+  .container,
+  .grey {
+    max-width: 700px;
+  }
+
+  header {
+    max-width: 700px;
   }
 
   header .head-btn {
@@ -734,7 +858,7 @@ form {
     position: fixed;
     background: #fff;
     flex-direction: column;
-    min-width: 400px;
+    min-width: 100vw;
     height: 100vh;
     top: 0;
     right: -100%;
@@ -758,20 +882,65 @@ form {
     left: 0;
     margin: 25px;
   }
+
+  /*Hero Section*/
+
+  .home h1 {
+    font-size: 80px;
+  }
+
+  .company-names h1 {
+    font-size: 24px;
+  }
+
+  /*Expert Section*/
+
+  .expert-list h1 {
+    width: 250px;
+  }
+
+  /*Work Section*/
+
+  .work-showcase {
+    gap: 8px;
+  }
+
+  .work-card img {
+    width: 250px;
+    height: 170px;
+  }
+
+  /*Feedback Section*/
+
+  .feedback-heading {
+    font-size: 70px;
+  }
+
+  /*About Page*/
+
+  .about-page img {
+    width: 700px;
+    height: 270px;
+  }
+
+  .the-team img {
+    width: 430px;
+    height: 500px;
+  }
+
 }
 
 @media screen and (max-width: 480px) {
-  .container {
-    max-width: 390px;
-    overflow: hidden;
+
+  .container, .grey {
+    max-width: 340px;
   }
 
   header {
-    max-width: 85%;
+    max-width: 340px;
   }
 
   header .brand {
-    padding-left: 10px;
     width: 95px;
   }
 
@@ -797,7 +966,7 @@ form {
   }
 
   .line {
-    width: 300px;
+    width: 340px;
     height: 1px;
   }
 
@@ -808,524 +977,168 @@ form {
     margin: 25px;
   }
 
-  /*Mobile Hero Section*/
-
-  .home {
-    margin-top: 50px;
-  }
+  /*Hero Section*/
 
   .home p {
     font-size: 10px;
   }
 
   .home h1 {
-    font-size: 46px;
+    font-size: 34px;
   }
 
   .company-names {
     flex-direction: column;
-    gap: 20px;
-  }
-
-  .company-name {
-    gap: 35px;
-  }
-
-  .company-names h1 {
-    font-size: 20px;
-  }
-
-  /*Mobile Service Section*/
-
-  .service-section {
-    margin-top: 16px;
-  }
-
-  .service-details {
-    width: 100%;
-    height: 568px;
-    flex-direction: column;
     gap: 10px;
-    padding: 0 10px;
   }
 
-  .service-left img {
-    width: 60px;
-    height: 60px;
-  }
-
-  .service-left {
-    margin-top: 39px;
-    gap: 28px;
-    margin-left: 5px;
-  }
-
-  .service-right {
-    width: 100%;
-    height: 342px;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-right: 5px;
-  }
-
-  .service-para {
-    font-size: 20px;
-  }
-
-  .service-icon {
-    display: none;
-  }
-
-  /*Mobile Service Section 2*/
-
-  .service {
-    flex-direction: column;
-    align-items: start;
-  }
-
-  .service-top {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    justify-content: center;
-    gap: 7px;
-  }
+  /*Service Section*/
 
   .service h1 {
-    font-size: 31.22px;
-  }
-
-  .service p {
-    font-size: 10px;
-  }
-
-  .service-name h6 {
-    width: 65.44px;
-    height: 23.8px;
-    font-size: 5.37px;
-    border: 1px solid #c2c2c2;
-    border-radius: 18.34px;
-  }
-
-  .service-info {
-    margin-top: 15px;
-  }
-
-  .service-info h1 {
-    font-size: 36.15px;
-  }
-
-  .service-info p {
-    margin-top: 8px;
-    font-size: 10px;
-  }
-
-  .service-info img {
-    width: 35.91px;
-    height: 35.91px;
-  }
-
-  /*Mobile Work Section*/
-
-  .work-section {
-    padding-top: 57px;
-    padding-left: 20px;
-    height: 1316px;
-  }
-
-  .work-section h3 {
-    font-size: 20px;
-  }
-
-  .work-showcase h4 {
-    margin-top: 19px;
-    margin-left: 20px;
-    font-size: 13.89px;
-  }
-
-  .work-section h5 {
-    margin-top: 10px;
-    font-size: 14px;
-  }
-
-  .work-showcase {
-    margin-top: 33px;
-    margin-right: 20px;
-  }
-
-  .work-row {
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .work-item {
-    width: 330.93px;
-    height: 272.88px;
-    border-radius: 17.86px;
-  }
-
-  .work-showcase img {
-    margin-top: 15px;
-    margin-left: 16px;
-    width: 292.23px;
-    height: 171.67px;
-    border-radius: 10.42px;
-  }
-
-  .work-showcase h6 {
-    margin-top: 16px;
-    margin-left: 20px;
-    width: 87.82px;
-    height: 21.83px;
-    border-radius: 34.73px;
-    background: #F0F0F0;
-    font-size: 7px;
-  }
-
-  .row2 {
-    margin-top: 16px;
-  }
-
-  /*Mobile Expert Section*/
-
-  .expert-section {
-    margin-top: 66px;
-  }
-
-  .expert-details {
-    height: 552px;
-  }
-
-  .expert-details {
-    flex-direction: column;
-    align-items: start;
-    height: 479px;
-  }
-
-  .expert-list1,
-  .expert-list2 {
-    display: flex;
-    flex-direction: column;
-    row-gap: 30px;
-  }
-
-  .expert-list1,
-  .expert-list2 {
-    margin-left: 0;
-    gap: 14px;
-  }
-
-  .exp-list {
-    width: 188.17px;
-    height: 45.88px;
-    border-radius: 10.66px;
-    font-size: 11.12px;
-  }
-
-  .expert-details {
-    gap: 20px;
-  }
-
-  .expert-right {
-    gap: 10px;
-  }
-
-  /*Mobile Team Section*/
-
-  .shyed {
-    margin-top: 43px;
-    flex-direction: column;
-    align-items: flex-start;
-    height: 935.19px;
-    border-radius: 25.38px;
-  }
-
-  .shyed-text,
-  .shyed-social-media {
-    margin-left: 57px;
-  }
-
-  .shyed-image img {
-    margin-top: 49px;
-    width: 42.04px;
-    height: 42.04px;
-  }
-
-  .shyed-text1 {
-    font-size: 36.49px;
-    margin-top: 45px;
-  }
-
-  .shyed-name {
-    margin-top: 72px;
-    font-size: 19.04px;
-  }
-
-  .shyed-details {
-    font-size: 15.86px;
-  }
-
-  .social-icons img {
-    margin-top: 29px;
-    width: 19.04px;
-    height: 19.04px;
-  }
-
-  .shyed-photo,
-  .shyed-photo img {
-    width: 396.6px;
-    height: 349.01px;
-  }
-
-  .shyed-photo img {
-    margin-top: 0;
-    margin-left: -8px;
-  }
-
-  /*Mobile Feedback Section*/
-
-  .feedback-section {
-    margin-top: 68px;
-  }
-
-  .feedback-text1 {
-    font-size: 16px;
-  }
-
-  .feedback-text2 {
-    margin-top: 20px;
-    font-size: 40px;
-  }
-
-  .feedback-divs {
-    flex-direction: column;
-  }
-
-  .feedback-div {
-    margin-top: 22px;
-    width: 380.12px;
-    height: 338.77px;
-  }
-
-  .feedback-center {
-    width: 391px;
-    height: 158.87px;
-    gap: 22px;
-    margin-top: 22px;
-  }
-
-  .feedback-profile img {
-    margin-top: 49px;
-    margin-left: 39px;
-    width: 66.01px;
-    width: 66.01px;
-  }
-
-  .feedback-center-profile img {
-    width: 66.01px;
-    width: 66.01px;
-  }
-
-  .feedback-div-text1 {
-    margin-left: 39px;
-    font-size: 21.76px;
-  }
-
-  .feedback-div-text2 {
-    margin-left: 39px;
-    font-size: 11.61px;
-  }
-
-  .feedback-center h3 {
-    font-size: 14.05px;
-  }
-
-  .feedback-bottom {
-    margin-top: 50px;
-    padding-top: 72px;
-    height: 309px;
-    border-radius: 32px;
-  }
-
-  .feedback-bottom-text {
     font-size: 30px;
   }
 
-  .feedback-btn {
-    margin: 46px auto 0px auto;
+  .service p {
+    font-size: 14px;
   }
 
-  /*Mobile Footer Section*/
-
-  .footer-section {
-    margin-top: 27px;
-    height: 1006px;
+  .service-name {
+    display: grid;
+    grid-template-columns: auto auto auto;
   }
 
-  .footer-top {
+  .service-name h6 {
+    width: 90px;
+    height: 34px;
+    font-size: 10px;
+  }
+
+  .service-arrow {
+    display: none;
+  }
+
+  /*Expert Section*/
+
+  .expert {
     flex-direction: column;
-    align-items: center;
   }
 
-  .footer-left {
-    margin-left: -50px;
+  .expert-list {
+    grid-template-columns: auto;
   }
 
-  .footer-logo img {
-    height: 42px;
-    margin-top: 40px;
+  .expert p {
+    text-align: center;
+    transform: rotate(0deg);
+    margin-bottom: 20px;
   }
 
-  .f-left-text {
-    margin-top: 26px;
+  .expert-list h1 {
+    width: 300px;
   }
 
-  .f-left-text2 {
-    margin-top: 37px;
+  .expert img {
+    display: none;
   }
 
-  .footer-mail {
-    column-gap: 20px;
-    margin-top: 40px;
+  /*Work Section*/
+
+  .work-showcase {
+    grid-template-columns: auto;
   }
 
-  .footer-row1,
-  .footer-icons,
-  .f-right-text2 {
-    margin-top: 50px;
+  .work-card img {
+    width: 250px;
   }
 
-  .f-right-text {
-    margin-top: 30px;
+  .work-card div:first-child {
+    margin: 20px;
+  }
+  
+  /*Feedback Section*/
+
+  .feedback-heading {
+    font-size: 32px;
   }
 
-  .footer-icons img {
-    width: 48px;
-    height: 48px;
+  .swiper {
+    width: 300px;
+    height: 350px;
   }
 
-  .footer-form {
-    gap: 8px;
+  .swiper-slide {
+    padding: 20px;
   }
 
-  .copyright {
-    margin-top: 25px;
+  /*Footer Section*/
+
+  .footer-icons {
+    column-gap: 10px;
   }
 
-  .grey {
-    margin-top: 35px;
-    background: #7c7c7c;
-    opacity: 46%;
+  .footer a img {
+    width: 40px;
+    height: 40px;
   }
 
-  /*Mobile About Page*/
-
-  .about-page {
-    margin-top: 50px;
-  }
+  /*About Page*/
 
   .about-page h1 {
-    font-family: 'grifter';
-    font-size: 46px;
+    font-size: 50px;
   }
 
-  .about-text1,
-  .about-texts p {
-    font-size: 10px;
-    margin-top: 25px;
+  .about-page p {
+    font-size: 16px;
   }
 
   .about-page img {
-    margin-top: 45px;
-    width: 100%;
-    height: 145px;
+    width: 340px;
+    height: 120px;
+  }
+
+  .about-page h2 {
+    font-size: 40px;
   }
 
   .about-page h3 {
-    margin-top: 60px;
-    font-size: 35px;
-  }
-
-  .about-texts {
-    margin-top: 45px;
-  }
-
-  .about-text2,
-  .about-texts h1 {
-    margin-top: 50px;
-    font-family: 'jakarta7';
-    font-size: 20.76px;
+    margin-top: 40px;
+    font-size: 32px;
   }
 
   .the-team img {
-    margin-top: 100px;
-    width: 255.36px;
-    height: 274.82px;
+    width: 340px;
+    height: 380px;
   }
 
-  /*Mobile Work Page*/
-
-  .work-page {
-    margin-top: 50px;
+  .talk {
+    padding: 60px 0;
   }
 
-  .work-text {
-    font-size: 10px;
+  .talk p {
+    font-size: 32px;
   }
 
-  .work-page h1 {
-    margin-top: 40px;
-    font-size: 43px;
-  }
-
-  .showcase {
-    margin-top: 100px;
-    padding-top: 142px;
-    height: 2500px;
-    padding-left: 25px;
-  }
-
-  /*Mobile Contact Page*/
+  /*Contact Page*/
 
   .contact-page {
-    margin-top: 50px;
+    flex-direction: column-reverse;
   }
 
-  .contact-bottom {
-    display: none;
-  }
-
-  .contact-columns {
+  .user-details {
     flex-direction: column;
+    gap: 10px;
   }
 
-  .contact-form {
-    flex-direction: column;
-    gap: 25px;
+  .user input {
+    width: 100%;
   }
 
-  .radios {
-    margin-top: 25px;
+  .radio-group {
+    grid-template-columns: auto auto;
   }
 
-  .contact-inner-row {
-    align-items: flex-start;
-    flex-direction: column;
-    row-gap: 22px;
+  .radio-label {
+    width: 165px;
   }
 
-  .contact-outer-row {
-    display: flex;
-    justify-content: space-between;
-    gap: 16px;
-    align-items: center;
-  }
-
-  .contact-btn2 {
-    margin-top: 20px;
-  }
-
-  .none {
-    display: none;
-  }
 }
