@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
 
 * {
   margin: 0;
@@ -9,15 +9,15 @@
 }
 
 @font-face {
-  font-family: 'grifter';
-  src: url('fonts/grifter.otf') format('opentype');
+  font-family: "grifter";
+  src: url("fonts/grifter.otf") format("opentype");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 
 #preloader {
-  background: #fafafa url('images/logo.png') no-repeat center center;
+  background: #fafafa url("images/logo.png") no-repeat center center;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -113,7 +113,7 @@ header .menu a {
 .btn-green {
   width: 8px;
   height: 8px;
-  background: #8DE746;
+  background: #8de746;
   border-radius: 50%;
 }
 
@@ -132,7 +132,7 @@ header .menu a {
 
 .home h1 {
   margin: 40px 0;
-  font-family: 'grifter';
+  font-family: "grifter";
   font-size: 140px;
 }
 
@@ -209,7 +209,7 @@ header .menu a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   cursor: pointer;
 }
 
@@ -220,7 +220,7 @@ header .menu a {
 }
 
 .horizontal-line {
-  background: #D2D2D2;
+  background: #d2d2d2;
   width: 100%;
   height: 1px;
   margin-top: 40px;
@@ -251,7 +251,7 @@ header .menu a {
 .service-arrow {
   width: 100px;
   height: 100px;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   cursor: pointer;
 }
 
@@ -309,7 +309,7 @@ header .menu a {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
   cursor: pointer;
-  transition: all .6s ease;
+  transition: all 0.6s ease;
 }
 
 .expert-list h1:hover {
@@ -351,7 +351,7 @@ header .menu a {
 }
 
 .work-card {
-  border: 0.5px solid #F2F2F2;
+  border: 0.5px solid #f2f2f2;
   border-radius: 32px;
 }
 
@@ -364,7 +364,7 @@ header .menu a {
   height: 250px;
   border-radius: 32px;
   cursor: pointer;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .work-card h1 {
@@ -387,7 +387,7 @@ header .menu a {
   width: 140px;
   height: 48px;
   border-radius: 50px;
-  background: #F0F0F0;
+  background: #f0f0f0;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -395,7 +395,7 @@ header .menu a {
   font-family: "Plus Jakarta Sans", sans-serif;
   font-weight: 700;
   font-size: 12px;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .work-tags h6:hover {
@@ -412,7 +412,7 @@ header .menu a {
 
 .feedback-heading {
   font-size: 90px;
-  font-family: 'grifter';
+  font-family: "grifter";
   text-align: center;
 }
 
@@ -425,7 +425,7 @@ header .menu a {
 .swiper-slide {
   background-color: #fff;
   padding: 40px;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #f2f2f2;
   border-radius: 20px;
 }
 
@@ -490,7 +490,7 @@ footer {
 .footer a img {
   width: 68px;
   height: 68px;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   cursor: pointer;
 }
 
@@ -511,7 +511,7 @@ footer {
 }
 
 .about-page h1 {
-  font-family: 'grifter';
+  font-family: "grifter";
   font-size: 140px;
 }
 
@@ -559,13 +559,13 @@ footer {
 .talk {
   margin-top: 40px;
   padding: 140px 0;
-  border: 1px solid #F2F2F2;
+  border: 1px solid #f2f2f2;
   border-radius: 32px;
   background: #fff;
 }
 
 .talk p {
-  font-family: 'grifter';
+  font-family: "grifter";
   font-size: 40px;
   text-align: center;
 }
@@ -645,7 +645,7 @@ form {
   border: 0.5px solid #c2c2c2;
   border-radius: 50px;
   background: #fafafa;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -655,7 +655,7 @@ form {
   font-weight: 500;
 }
 
-.radio-input:checked+.radio-label {
+.radio-input:checked + .radio-label {
   border-color: #000000;
 }
 
@@ -675,7 +675,7 @@ form {
   font-size: 14px;
   margin-top: 40px;
   cursor: pointer;
-  transition: all .4s ease;
+  transition: all 0.4s ease;
 }
 
 .contact-page button:hover {
@@ -719,7 +719,6 @@ form {
 }
 
 @media (max-width: 1024px) {
-
   .container,
   .grey {
     max-width: 750px;
@@ -839,8 +838,7 @@ form {
   }
 }
 
-@media screen and (max-width : 768px) {
-
+@media screen and (max-width: 768px) {
   .container,
   .grey {
     max-width: 700px;
@@ -863,7 +861,7 @@ form {
     top: 0;
     right: -100%;
     padding: 80px 50px;
-    transition: .6s;
+    transition: 0.6s;
     transition-property: right;
   }
 
@@ -927,12 +925,11 @@ form {
     width: 430px;
     height: 500px;
   }
-
 }
 
 @media screen and (max-width: 480px) {
-
-  .container, .grey {
+  .container,
+  .grey {
     max-width: 340px;
   }
 
@@ -957,7 +954,7 @@ form {
     top: 0;
     right: -100%;
     padding: 80px 50px;
-    transition: .6s;
+    transition: 0.6s;
     transition-property: right;
   }
 
@@ -1054,7 +1051,7 @@ form {
   .work-card div:first-child {
     margin: 20px;
   }
-  
+
   /*Feedback Section*/
 
   .feedback-heading {
@@ -1140,5 +1137,4 @@ form {
   .radio-label {
     width: 165px;
   }
-
 }
