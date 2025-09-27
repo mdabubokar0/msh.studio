@@ -9,40 +9,15 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <title>msh.studio | About</title>
+    <link rel="icon" type="image/png" href="../assets/white-logo.png">
+    <title>mshstudio | About</title>
   </head>
 
   <body>
     <div id="preloader"></div>
     <!--Navbar-->
-    <nav>
-      <header>
-        <a href="index.html"
-          ><img class="brand" src="../images/logo.png" alt="Logo"
-        /></a>
-        <div class="menu">
-          <div class="head-btn">
-            <i class="fas fa-times close-btn"></i>
-          </div>
-          <a href="../index.html">Home</a>
-          <a href="./about.html">About</a>
-          <a href="../work/work.html">Work</a>
-          <a href="../contact/contact.html">Contact</a>
-          <a href="#">
-            <div class="line"></div>
-          </a>
-          <a href="contact.html">
-            <div class="btn">
-              <div class="btn-green"></div>
-              Let's talk!
-            </div>
-          </a>
-        </div>
-        <div class="head-btn">
-          <i class="fas fa-bars menu-btn"></i>
-        </div>
-      </header>
-    </nav>
+    <custom-navbar> </custom-navbar>
+
     <!--About Page-->
     <section class="container about-page">
       <div>
@@ -54,7 +29,7 @@
           We're striving to craft meaningful solutions, simplify lives, and
           empower businesses to exceed their limits.
         </p>
-        <img src="images/topteam.png" alt="team image" />
+        <img src="./assets/about.png" alt="team image" />
         <h2>Shared values bind us together</h2>
         <p class="about-text1 left">
           Making an impact, staying curious, and always growing. These values
@@ -100,7 +75,7 @@
           </div>
         </div>
         <div class="the-team">
-          <img src="images/team.png" alt="The Team" />
+          <img src="./assets/team.png" alt="The Team" />
         </div>
         <div class="talk">
           <p>
@@ -117,37 +92,7 @@
       </div>
     </section>
     <!--Footer Section-->
-    <footer>
-      <div class="container footer">
-        <div>
-          <img src="images/logo2.png" alt="Logo" />
-          <p>
-            We are glad to see you on our website! We are sure that you will
-            find everything you need for your project.
-          </p>
-        </div>
-        <div class="footer-icons">
-          <a href="https://dribbble.com/uishyed"
-            ><img src="images/f1.png" alt="Icon"
-          /></a>
-          <a href="https://app.slack.com/huddle/T0574606V33/C0574608FL1"
-            ><img src="images/f2.png" alt="Icon"
-          /></a>
-          <a href="https://www.behance.net/shyed"
-            ><img src="images/f3.png" alt="Icon"
-          /></a>
-          <a
-            href="https://www.facebook.com/profile.php?id=100092141329064&mibextid=ZbWKwL"
-            ><img src="images/f4.png" alt="Icon"
-          /></a>
-          <a href="https://wa.me/message/XKIOSQOUUUPIN1"
-            ><img src="images/f5.png" alt="Icon"
-          /></a>
-        </div>
-        <div class="horizontal-line grey"></div>
-        <p class="copyright">© All rights reserved by msh.studio</p>
-      </div>
-    </footer>
+    <custom-footer></custom-footer>
 
     <script src="../index.js"></script>
   </body>

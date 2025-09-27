@@ -19,8 +19,7 @@ Welcome to the **Mshstudio** project! This README provides an overview of the pr
 
 ## About
 
-**Mshstudio** is a creative digital agency focused on building modern, scalable, and user-centric solutions. The mission is to help businesses and individuals transform their ideas into reality through design, technology, and innovation.  
-At **Mshstudio**, we believe in collaboration, creativity, and delivering products that make a real impact.
+**Mshstudio** is a creative digital agency focused on building modern, scalable, and user-centric solutions. The mission is to help businesses and individuals transform their ideas into reality through design, technology, and innovation. At **Mshstudio**, we believe in collaboration, creativity, and delivering products that make a real impact.
 
 ## Features
 
@@ -51,7 +50,7 @@ At **Mshstudio**, we believe in collaboration, creativity, and delivering produc
    http://localhost:5500
    ```
 
-## 👥 Contributors
+## Contributors
 
 <p align="center">
   <a href="https://github.com/imabu0/mshstudio/graphs/contributors">

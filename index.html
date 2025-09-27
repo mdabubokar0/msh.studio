@@ -1,240 +1,244 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="icon" type="image/png" href="./assets/white-logo.png">
+    <title>mshstudio | Home</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
-</head>
+  <body>
+    <div id="preloader"></div>
+    <!--Navbar-->
+    <custom-navbar> </custom-navbar>
 
-<body>
-  <div id="preloader"></div>
-  <!--Navbar-->
-  <nav>
-    <header>
-      <a href="index.html"><img class="brand" src="images/logo.png" alt="Logo"></a>
-      <div class="menu">
-        <div class="head-btn">
-          <i class="fas fa-times close-btn"></i>
+    <!--Hero Section-->
+    <section class="container">
+      <div class="home">
+        <p>CREATE - OPTIMIZE - DEVELOPE</p>
+        <h1>
+          Powerful Digital <br />
+          Design Agency
+        </h1>
+        <p>
+          WE ARE GLAD TO SEE YOU ON OUR WEBSITE! WE ARE SURE, THAT YOU <br />
+          WILL FIND EVERYTHING YOU NEED FOR YOUR PROJECT.
+        </p>
+        <img src="./assets/mouse.png" alt="Mouse" />
+      </div>
+      <div class="company-names">
+        <h1>Sharpy.</h1>
+        <h1>Tech1usa</h1>
+        <h1>Courtside</h1>
+        <h1>Smart off</h1>
+        <h1>WooW</h1>
+      </div>
+    </section>
+    <!--Service Section-->
+    <section class="container service">
+      <h1>Our Services.</h1>
+      <p>
+        Every one of us loves something different. So, explore the world through
+        the lens of our visual capabilities, and find what you love
+      </p>
+      <div class="service-name">
+        <h6>Web Dev</h6>
+        <h6>App Design</h6>
+        <h6>S.E.O</h6>
+        <h6>UX/UI Design</h6>
+        <h6>Branding</h6>
+      </div>
+      <div class="horizontal-line"></div>
+      <div class="services">
+        <div>
+          <h1>UX/UI Design</h1>
+          <p>
+            By putting users' needs at the forefront, we tell a unique story of
+            your company, juggling with fancy visual elements.
+          </p>
         </div>
-        <a href="index.html">Home</a>
-        <a href="./about/about.html">About</a>
-        <a href="./work/work.html">Work</a>
-        <a href="./contact/contact.html">Contact</a>
-        <a href="#">
-          <div class="line"></div>
+        <img class="service-arrow" src="./assets/anglearrow.png" alt="arrow" />
+      </div>
+      <div class="horizontal-line"></div>
+      <div class="services">
+        <div>
+          <h1>Technology</h1>
+          <p>
+            The motto of our development process is creating digital experiences
+            that are both appealing and functional.
+          </p>
+        </div>
+        <img class="service-arrow" src="./assets/anglearrow.png" alt="arrow" />
+      </div>
+      <div class="horizontal-line bottom"></div>
+      <div class="services">
+        <div>
+          <h1>Business</h1>
+          <p>
+            With various tools, our experts can help you expand the target
+            audience and increase brand awareness.
+          </p>
+        </div>
+        <img class="service-arrow" src="./assets/anglearrow.png" alt="arrow" />
+      </div>
+    </section>
+    <!--Expert Section-->
+    <section class="container expert">
+      <div>
+        <p>
+          We are <br />
+          Expert On
+        </p>
+        <img src="./assets/arrow.png" alt="arrow" />
+      </div>
+      <div class="expert-list">
+        <h1>Healthtech</h1>
+        <h1>Fintech</h1>
+        <h1>E-commarce Tech</h1>
+        <h1>Education</h1>
+        <h1>Foodtech</h1>
+        <h1>Traveltech</h1>
+        <h1>Real state tech</h1>
+        <h1>B2B/SAAS</h1>
+      </div>
+    </section>
+    <!--Work Section-->
+    <section class="container work">
+      <h2>Our Recent Works</h2>
+      <div class="work-showcase">
+        <div class="work-card">
+          <div>
+            <a
+              href="https://www.behance.net/gallery/160052321/Travel-24-Case-Study"
+              ><img src="./work/assets/work1.png" alt="Work"
+            /></a>
+            <h1>Travel 24 Case Study</h1>
+            <div class="work-tags">
+              <h6>Case Study</h6>
+              <h6>App Design</h6>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div>
+            <a
+              href="https://dribbble.com/shots/20694649-Medical-Health-Software-Design"
+              ><img src="./work/assets/work5.png" alt="Work"
+            /></a>
+            <h1>Medical Health - Software Design</h1>
+            <div class="work-tags">
+              <h6>SAAS Design</h6>
+              <h6>Software</h6>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div>
+            <a
+              href="https://dribbble.com/shots/21882273-Oxylabs-io-Website-Redesign"
+              ><img src="./work/assets/work3.png" alt="Work"
+            /></a>
+            <h1>Oxylabs.io Website Redesign</h1>
+            <div class="work-tags">
+              <h6>Website</h6>
+              <h6>Redesign</h6>
+            </div>
+          </div>
+        </div>
+        <div class="work-card">
+          <div>
+            <a
+              href="https://www.behance.net/gallery/101354595/Qatar-Branding-Design"
+              ><img src="./work/assets/work6.png" alt="Work"
+            /></a>
+            <h1>Qatar Branding Design</h1>
+            <div class="work-tags">
+              <h6>Branding</h6>
+              <h6>Logo Design</h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Feedback Section-->
+    <section class="container feedback">
+      <p class="feedback-heading">What Client Says</p>
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./assets/client1.png" alt="profile" />
+            <div>
+              <h3>(Danny) ShootsandReels</h3>
+              <p>
+                A powerful scraper with city-level structured SERP data delivery
+                from major search engines.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/client2.png" alt="profile" />
+            <div>
+              <h3>(Luckman) Courteside</h3>
+              <p>
+                Great designer and extremely responsive. Makes an effort to make
+                things better and understand the problem statement.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/client3.png" alt="profile" />
+            <div>
+              <h3>kldmsg</h3>
+              <p>
+                I am beyond impressed with the outstanding work. He exceeded all
+                expectations and delivered a visually stunning design.
+                Throughout the project, he was dedicated, responsive, and highly
+                adaptable to my feedback.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <img src="./assets/client4.png" alt="profile" />
+            <div>
+              <h3>(agustinmaillet) Sharpy</h3>
+              <p>
+                Exceptionally professional job. Surpassed my expectations.
+                Communication was seamless and rapid. When adjustments were
+                needed, they were executed punctually and, most importantly,
+                precisely as I envisioned. Many thanks—I enthusiastically
+                endorse shyed!
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="talk">
+        <p>
+          Ready to discuss <br />
+          your project?
+        </p>
+        <a href="./contact/contact.html">
+          <div class="talk-btn btn">
+            <div class="btn-green"></div>
+            Let's talk!
+          </div>
         </a>
-        <a href="contact.html">
-          <div class="btn">
-            <div class="btn-green"></div>Let's talk!
-          </div>
-        </a>
       </div>
-      <div class="head-btn">
-        <i class="fas fa-bars menu-btn"></i>
-      </div>
-    </header>
-  </nav>
-  <!--Hero Section-->
-  <section class="container">
-    <div class="home">
-      <p>CREATE - OPTIMIZE - DEVELOPE</p>
-      <h1>Powerful Digital <br> Design Agency</h1>
-      <p>WE ARE GLAD TO SEE YOU ON OUR WEBSITE! WE ARE SURE, THAT YOU <br> WILL FIND EVERYTHING YOU NEED FOR YOUR
-        PROJECT.</p>
-      <img src="images/mouse.png" alt="Mouse">
-    </div>
-    <div class="company-names">
-      <h1>Sharpy.</h1>
-      <h1>Tech1usa</h1>
-      <h1>Courtside</h1>
-      <h1>Smart off</h1>
-      <h1>WooW</h1>
-    </div>
-  </section>
-  <!--Service Section-->
-  <section class="container service">
-    <h1>Our Services.</h1>
-    <p>Every one of us loves something different. So, explore the world through the lens of our visual
-      capabilities, and find what you love</p>
-    <div class="service-name">
-      <h6>Web Dev</h6>
-      <h6>App Design</h6>
-      <h6>S.E.O</h6>
-      <h6>UX/UI Design</h6>
-      <h6>Branding</h6>
-    </div>
-    <div class="horizontal-line"></div>
-    <div class="services">
-      <div>
-        <h1>UX/UI Design</h1>
-        <p>By putting users' needs at the forefront, we tell a unique story of your company, juggling with
-          fancy visual elements.</p>
-      </div>
-      <img class="service-arrow" src="images/anglearrow.png" alt="arrow">
-    </div>
-    <div class="horizontal-line"></div>
-    <div class="services">
-      <div>
-        <h1>Technology</h1>
-        <p>The motto of our development process is creating digital experiences that are both appealing and
-          functional.</p>
-      </div>
-      <img class="service-arrow" src="images/anglearrow.png" alt="arrow">
-    </div>
-    <div class="horizontal-line bottom"></div>
-    <div class="services">
-      <div>
-        <h1>Business</h1>
-        <p>With various tools, our experts can help you expand the target audience and increase brand
-          awareness.</p>
-      </div>
-      <img class="service-arrow" src="images/anglearrow.png" alt="arrow">
-    </div>
-  </section>
-  <!--Expert Section-->
-  <section class="container expert">
-    <div>
-      <p>We are <br> Expert On</p>
-      <img src="images/arrow.png" alt="arrow">
-    </div>
-    <div class="expert-list">
-      <h1>Healthtech</h1>
-      <h1>Fintech</h1>
-      <h1>E-commarce Tech</h1>
-      <h1>Education</h1>
-      <h1>Foodtech</h1>
-      <h1>Traveltech</h1>
-      <h1>Real state tech</h1>
-      <h1>B2B/SAAS</h1>
-    </div>
-  </section>
-  <!--Work Section-->
-  <section class="container work">
-    <h2>Our Recent Works</h2>
-    <div class="work-showcase">
-      <div class="work-card">
-        <div>
-          <a href="https://www.behance.net/gallery/160052321/Travel-24-Case-Study"><img src="images/work1.png"
-              alt="Work"></a>
-          <h1>Travel 24 Case Study</h1>
-          <div class="work-tags">
-            <h6>Case Study</h6>
-            <h6>App Design</h6>
-          </div>
-        </div>
-      </div>
-      <div class="work-card">
-        <div>
-          <a href="https://dribbble.com/shots/20694649-Medical-Health-Software-Design"><img src="images/work5.png"
-              alt="Work"></a>
-          <h1>Medical Health - Software Design</h1>
-          <div class="work-tags">
-            <h6>SAAS Design</h6>
-            <h6>Software</h6>
-          </div>
-        </div>
-      </div>
-      <div class="work-card">
-        <div>
-          <a href="https://dribbble.com/shots/21882273-Oxylabs-io-Website-Redesign"><img src="images/work3.png"
-              alt="Work"></a>
-          <h1>Oxylabs.io Website Redesign</h1>
-          <div class="work-tags">
-            <h6>Website</h6>
-            <h6>Redesign</h6>
-          </div>
-        </div>
-      </div>
-      <div class="work-card">
-        <div>
-          <a href="https://www.behance.net/gallery/101354595/Qatar-Branding-Design"><img src="images/work6.png"
-              alt="Work"></a>
-          <h1>Qatar Branding Design</h1>
-          <div class="work-tags">
-            <h6>Branding</h6>
-            <h6>Logo Design</h6>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!--Feedback Section-->
-  <section class="container feedback">
-    <p class="feedback-heading">What Client Says</p>
-    <div class="swiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide">
-          <img src="images/client1.png" alt="profile image">
-          <div>
-            <h3>(Danny) ShootsandReels</h3>
-            <p>A powerful scraper with city-level structured SERP data delivery from
-              major search engines.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/client2.png" alt="profile image">
-          <div>
-            <h3>(Luckman) Courteside</h3>
-            <p>Great designer and extremely responsive. Makes an effort to make things better and
-              understand the problem statement.</p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/client3.png" alt="profile image">
-          <div>
-            <h3>kldmsg</h3>
-            <p>I am beyond impressed with the outstanding work. He exceeded all expectations and delivered
-              a visually stunning design. Throughout the project, he was dedicated, responsive, and highly
-              adaptable to my feedback. </p>
-          </div>
-        </div>
-        <div class="swiper-slide">
-          <img src="images/client4.png" alt="profile image">
-          <div>
-            <h3>(agustinmaillet) Sharpy</h3>
-            <p>Exceptionally professional job. Surpassed my expectations.
-              Communication was seamless and rapid. When adjustments were needed, they were executed
-              punctually and, most importantly, precisely as I envisioned. Many thanks—I enthusiastically endorse
-              shyed!
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="swiper-pagination"></div>
-    </div>
-    <div class="talk">
-      <p>Ready to discuss <br> your project?</p>
-      <a href="contact.html">
-        <div class="talk-btn btn">
-          <div class="btn-green"></div>Let's talk!
-        </div>
-      </a>
-    </div>
-  </section>
-  <!--Footer Section-->
-  <footer>
-    <div class="container footer">
-      <div>
-        <img src="images/logo2.png" alt="Logo">
-        <p>We are glad to see you on our website! We are sure that you will find everything you need for your project.</p>
-      </div>
-      <div class="footer-icons">
-        <a href="https://dribbble.com/uishyed"><img src="images/f1.png" alt="Icon"></a>
-        <a href="https://app.slack.com/huddle/T0574606V33/C0574608FL1"><img src="images/f2.png" alt="Icon"></a>
-        <a href="https://www.behance.net/shyed"><img src="images/f3.png" alt="Icon"></a>
-        <a href="https://www.facebook.com/profile.php?id=100092141329064&mibextid=ZbWKwL"><img src="images/f4.png" alt="Icon"></a>
-        <a href="https://wa.me/message/XKIOSQOUUUPIN1"><img src="images/f5.png" alt="Icon"></a>
-      </div>
-      <div class="horizontal-line grey"></div>
-      <p class="copyright">© All rights reserved by msh.studio</p>
-    </div>
-  </footer>
+    </section>
+    <!--Footer Section-->
+    <custom-footer></custom-footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="index.js"></script>
-</body>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
 </html>
