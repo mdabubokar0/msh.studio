@@ -1,5 +1,7 @@
 # Mshstudio - Portfolio Website
 
+![Mshstudio](mshstudio.png)
+
 Welcome to the **Mshstudio** project! This README provides an overview of the project, setup instructions, and other relevant details.
 
 ## Table of Contents
@@ -15,7 +17,8 @@ Welcome to the **Mshstudio** project! This README provides an overview of the pr
 
 ## Visit
 
-- [Vercel](https://mshstudio0.vercel.app/)
+- [Repository](https://github.com/aabubokarr/mshstudio)
+- [Website](https://aabubokarr.github.io/mshstudio/)
 
 ## About
 
@@ -36,15 +39,11 @@ Welcome to the **Mshstudio** project! This README provides an overview of the pr
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/woabu0/mshstudio.git
+   git clone https://github.com/aabubokarr/mshstudio.git
    ```
 2. Start the application:
    ```bash
    Go Live
-   ```
-3. Open your browser and navigate to:
-   ```
-   http://localhost:5500
    ```
 
 ## Structure
@@ -52,22 +51,21 @@ Welcome to the **Mshstudio** project! This README provides an overview of the pr
 ```
 mshstudio/
 ├── assets/
-│   ├── logo.png
-│   └── white-logo.png
+│   ├── logo.png                 # Main studio logo
+│   └── white-logo.png           # White version of the studio logo
 ├── fonts/
-│   └── grifter.otf
-├── index.html
-├── index.js
-├── style.css
-├── LICENSE
-└── README.md
-```
+│   └── grifter.otf              # Custom Grifter font
+├── index.html                   # Main HTML entry point
+├── index.js                     # Main JavaScript entry point
+├── style.css                    # Global website styles
+├── LICENSE                      # Project license
+└── README.md                    # Project documentation
 
 ## Contributors
 
 <p align="center">
-  <a href="https://github.com/woabu0/mshstudio/graphs/contributors">
-    <img src="https://contrib.rocks/image?repo=woabu0/mshstudio" alt="Contributors" />
+  <a href="https://github.com/aabubokarr/mshstudio/graphs/contributors">
+    <img src="https://contrib.rocks/image?repo=aabubokarr/mshstudio" alt="Contributors" />
   </a>
 </p>
 
